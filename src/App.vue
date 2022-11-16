@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<HomeView v-if="store.step === 1"/>
+	<InvitView v-if="store.step === 2"/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import HomeView from '@/views/HomeView'
+import InvitView from '@/views/InvitView'
+import { useIndexStore } from '@/store/index'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+const store = useIndexStore()
+
 </script>
 
 <style lang="scss">
+body {
+	min-height: 100vh;
+	background-color: rgb(31, 31, 31);
+	margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

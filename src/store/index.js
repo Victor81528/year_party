@@ -1,14 +1,12 @@
-import { createStore } from 'vuex'
+import { defineStore } from 'pinia'
 
-export default createStore({
-  state: {
-  },
+export const useIndexStore = defineStore('index', {
+  state: () => ({
+    step: 1,
+    aaa: 1
+  }),
   getters: {
   },
-  mutations: {
-  },
   actions: {
-  },
-  modules: {
-  }
+	}
 })

@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import store from './store'
+import { createPinia } from 'pinia'
+import './_reset.css'
 
-createApp(App).use(store).mount('#app')
+createApp(App).use(createPinia()).mount('#app')
