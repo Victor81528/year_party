@@ -30,6 +30,7 @@
 }
 .letter {
     width: 80vw;
+    max-width: calc(768px - 20vw);
     min-height: 80vh;
     background-color: rgb(239, 186, 115);
     border-radius: 8px;

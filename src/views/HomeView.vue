@@ -38,9 +38,9 @@ watch(() => keyword.value, (newValue, oldValue) => {
             res.value = '我懂了'
         }, 2300)
 
-        // setTimeout(() => {
-        //     store.step = 2
-        // }, 3800)
+        setTimeout(() => {
+            store.step = 2
+        }, 4800)
     }
 })
 
@@ -195,6 +195,8 @@ setTimeout(() => {
 }
 
 #home {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 100;
     animation: flicker 0.08s infinite;
     &:before{
         content: " ";
