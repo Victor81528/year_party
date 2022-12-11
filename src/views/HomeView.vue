@@ -198,6 +198,7 @@ setTimeout(() => {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 100;
     animation: flicker 0.08s infinite;
+    /* backdrop-filter: blur(5px); */
     &:before{
         content: " ";
         display: block;
